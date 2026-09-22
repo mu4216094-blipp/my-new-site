@@ -3,103 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My New Website</title>
+    <!-- AdSense & SEO Keywords -->
+    <meta name="description" content="Welcome to my official website. Explore high-quality articles, guides, and insights on various topics.">
+    <meta name="keywords" content="blog, articles, technology, updates, news, tutorials, information">
+    <meta name="author" content="My Brand">
+    <title>My Website - Home</title>
+    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f4f6f0;
+            color: #2c3531;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
+        /* Top Navigation Bar */
         header {
-            background-color: #800020; /* Maroon color */
+            background-color: #556B2F; /* Olive Green */
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        main {
-            padding: 40px 20px;
-            text-align: center;
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #d1e2c4;
+        }
+        
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
             flex: 1;
+            width: 100%;
         }
-        h1 {
-            font-size: 2.5rem;
+        
+        /* Welcome Banner */
+        .hero {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 6px solid #556B2F;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        .hero h1 {
+            color: #556B2F;
             margin-bottom: 10px;
         }
-        p {
-            font-size: 1.2rem;
-            color: #555;
+
+        /* Articles Section */
+        .section-title {
+            font-size: 1.5rem;
+            color: #2c3531;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #556B2F;
+            display: inline-block;
+            padding-bottom: 5px;
         }
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .article-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+        }
+        .article-card h3 {
+            color: #556B2F;
+            margin-bottom: 10px;
+        }
+        .article-card p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .read-btn {
+            display: inline-block;
+            color: #556B2F;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .read-btn:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Section */
         footer {
-            background-color: #800020; /* Maroon color */
+            background-color: #556B2F;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 25px 20px;
+            margin-top: 40px;
+        }
+        .footer-links {
+            margin-bottom: 12px;
+        }
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 0.95rem;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        footer p {
+            font-size: 0.85rem;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
 
+    <!-- Header Navigation -->
     <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-
-    <main>
-        <h2>Clean Maroon & White Theme</h2>
-        <p>Yeh aapki nayi website ka main content area hai. Aap yahan apni marzi ka text, images ya buttons add kar sakte hain.</p>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Website</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { background-color: #f9f9f6; color: #2c3531; display: flex; flex-direction: column; min-height: 100vh; }
-        header { background-color: #556B2F; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
-        nav a { color: white; text-decoration: none; margin-left: 15px; font-weight: bold; }
-        main { padding: 40px 20px; flex: 1; max-width: 900px; margin: auto; background: white; margin-top: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.05); width: 100%; }
-        footer { background-color: #556B2F; color: white; text-align: center; padding: 20px; margin-top: 20px; }
-        footer a { color: #f9f9f6; text-decoration: underline; margin: 0 10px; }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h2>My Brand</h2>
+        <div class="logo">My Brand</div>
         <nav>
             <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
-    <main>
-        <h1>Welcome to My Website</h1>
-        <p>Aapka high-quality content yahan aayega. Olive green and white theme design live ho chuka hai.</p>
-    </main>
+    <!-- Content Area -->
+    <div class="container">
+        
+        <!-- Welcome Hero Box -->
+        <div class="hero">
+            <h1>Welcome to Our Website</h1>
+            <p>Aapka high-quality content yahan aayega. Yeh clean Olive Green & White design AdSense policies ke mutabiq fully optimized hai.</p>
+        </div>
 
+        <!-- Articles Area -->
+        <h2 class="section-title">Latest Articles</h2>
+        
+        <div class="articles-grid">
+            
+            <!-- Article Box 1 -->
+            <div class="article-card">
+                <h3>Article Title 1</h3>
+                <p>Yahan aap apna pehla article ya content likh sakte hain. AdSense approval ke liye achha informative content hona zaroori hai.</p>
+                <a href="#" class="read-btn">Read More &rarr;</a>
+            </div>
+
+            <!-- Article Box 2 -->
+            <div class="article-card">
+                <h3>Article Title 2</h3>
+                <p>Yahan apna doosra article likhein. Clean layout se visitors ko aapki website browse karne mein aasaani hoti hai.</p>
+                <a href="#" class="read-btn">Read More &rarr;</a>
+            </div>
+
+            <!-- Article Box 3 -->
+            <div class="article-card">
+                <h3>Article Title 3</h3>
+                <p>Yahan teesra article aayega. Minimum 10 se 15 articles add karne par AdSense fast approval deta hai.</p>
+                <a href="#" class="read-btn">Read More &rarr;</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 My Website. All Rights Reserved.</p>
-        <p style="margin-top: 10px;">
+        <div class="footer-links">
+            <a href="index.html">Home</a> | 
             <a href="privacy.html">Privacy Policy</a> | 
             <a href="terms.html">Terms & Conditions</a> | 
             <a href="contact.html">Contact Us</a>
-        </p>
+        </div>
+        <p>&copy; 2026 My Website. All Rights Reserved.</p>
     </footer>
 
 </body>
